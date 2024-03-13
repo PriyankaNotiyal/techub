@@ -48,19 +48,24 @@ $('.owl-carousel').owlCarousel({
 // search
 
 function displaySearch() {
-    // console.log("displaysearch");
+    console.log("displaysearch");
     let pathname = window.location.pathname;
-    // alert(pathname);
-    // Split the pathname by "/" and extract the last element
+    alert(pathname);
+    
+    // Extract the file name from the pathname
     let pathParts = pathname.split("/");
     let fileName = pathParts[pathParts.length - 1];
-    // alert(fileName);
-    if(fileName === ' '|| filename === ''){
+    
+    // Check if the fileName is empty or undefined, then set it to "index.html"
+    if (!fileName || fileName.trim() === "") {
         fileName = "index.html";
     }
+    
+    alert(fileName);
     localStorage.setItem("path", fileName);
     window.location.href = "/searchp.html";
 }
+
 
 function closeSearch(){
     let path = localStorage.getItem("path");
