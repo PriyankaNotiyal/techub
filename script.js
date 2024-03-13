@@ -55,7 +55,7 @@ function displaySearch() {
     let pathParts = pathname.split("/");
     let fileName = pathParts[pathParts.length - 1];
     // alert(fileName);
-    if(fileName == ''){
+    if(fileName === ' '|| filename === ''){
         fileName = "index.html";
     }
     localStorage.setItem("path", fileName);
