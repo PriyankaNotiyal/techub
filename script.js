@@ -48,21 +48,19 @@ $('.owl-carousel').owlCarousel({
 // search
 
 function displaySearch() {
-    console.log("displaysearch");
+    // console.log("displaysearch");
     let pathname = window.location.pathname;
-    alert(pathname);
+    // alert(pathname);
     // Split the pathname by "/" and extract the last element
     let pathParts = pathname.split("/");
     let fileName = pathParts[pathParts.length - 1];
-    alert(fileName);
+    // alert(fileName);
     localStorage.setItem("path", fileName);
     window.location.href = "/searchp.html";
 }
 
 function closeSearch(){
-    let path = localStorage.getItem("path")
-     alert(pathname);
-     alert(path);
+    let path = localStorage.getItem("path");
     // alert("clicked:"+path)
     window.location.href=  path; 
 }
