@@ -55,6 +55,9 @@ function displaySearch() {
     let pathParts = pathname.split("/");
     let fileName = pathParts[pathParts.length - 1];
     // alert(fileName);
+    if(fileName == ''){
+        fileName = "index.html";
+    }
     localStorage.setItem("path", fileName);
     window.location.href = "/searchp.html";
 }
