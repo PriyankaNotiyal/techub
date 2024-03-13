@@ -48,9 +48,9 @@ $('.owl-carousel').owlCarousel({
 // search
 
 function displaySearch() {
-    console.log("displaysearch");
+    // console.log("displaysearch");
     let pathname = window.location.pathname;
-    alert(pathname);
+    // alert(pathname);
     
     // Extract the file name from the pathname
     let pathParts = pathname.split("/");
@@ -61,7 +61,7 @@ function displaySearch() {
         fileName = "index.html";
     }
     
-    alert(fileName);
+    // alert(fileName);
     localStorage.setItem("path", fileName);
     window.location.href = "/searchp.html";
 }
