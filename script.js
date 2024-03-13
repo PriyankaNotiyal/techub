@@ -59,6 +59,8 @@ function displaySearch(){
 }
 function closeSearch(){
     let path = localStorage.getItem("path")
+     console.log(pathname);
+     console.log(path);
     // alert("clicked:"+path)
     window.location.href=  path; 
 }
