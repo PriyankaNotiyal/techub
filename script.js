@@ -47,16 +47,18 @@ $('.owl-carousel').owlCarousel({
 
 // search
 
-function displaySearch(){
+function displaySearch() {
     console.log("displaysearch");
     let pathname = window.location.pathname;
     alert(pathname);
-    let path = pathname.substring(8);
-    alert(path);
-    localStorage.setItem("path",path)
-    window.location.href = "/searchp.html"
-    
+    // Split the pathname by "/" and extract the last element
+    let pathParts = pathname.split("/");
+    let fileName = pathParts[pathParts.length - 1];
+    alert(fileName);
+    localStorage.setItem("path", fileName);
+    window.location.href = "/searchp.html";
 }
+
 function closeSearch(){
     let path = localStorage.getItem("path")
      alert(pathname);
