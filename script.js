@@ -48,6 +48,7 @@ $('.owl-carousel').owlCarousel({
 // search
 
 function displaySearch(){
+    console.log("displaysearch");
     let pathname = window.location.pathname;
     let path = pathname.substring(1);
     localStorage.setItem("path",path)
