@@ -1,0 +1,217 @@
+
+
+/* *{
+    border: 2px solid red;
+} */
+.modal-body h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-body p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: .5px;
+    margin: 20px 0 30px;
+}
+
+.modal-body span {
+    padding: 10px 0 10px 0 ;
+    font-size: 12px;
+}
+
+.anchor {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.modal-body .container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 550px;
+}
+
+.modal-body .form-container form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding:  0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-body .form-container input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.modal-body button {
+    border-radius: 20px;
+    border: 1px solid var( --bs-background1-color);
+    background: var( --bs-background1-color);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 5px 5px rgba(0, 0, 0, .2);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.modal-body button:active {
+    transform: scale(.95);
+}
+
+.modal-body button:focus {
+    outline: none;
+}
+
+.modal-body button.ghost {
+    background: transparent;
+    border-color: #fff;
+}
+
+.modal-body .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all .6s ease-in-out;
+}
+
+.modal-body .sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    
+    
+}
+
+.modal-body .sign-up-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    
+}
+
+.modal-body .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform .6s ease-in-out;
+    z-index: 100;
+}
+
+.modal-body .overlay {
+    /* background: var(--bs-background1-color); */
+    background: linear-gradient(to right,var( --bs-background1-color), rgb(231, 138, 0)) no-repeat 0 0 / cover;
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateY(0);
+    transition: transform .6s ease-in-out;
+}
+
+.modal-body .overlay-panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform .6s ease-in-out;
+}
+
+.modal-body .overlay-right {
+    right: 0;
+    transform: translateY(0);
+}
+
+.modal-body .overlay-left {
+    transform: translateY(-20%);
+}
+
+/* Move signin to right */
+.modal-body .container.right-panel-active .sign-up-container {
+    transform: translatex(100%);
+}
+
+/* Move overlay to left */
+.modal-body .container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+/* Bring signup over signin */
+.modal-body .container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Move overlay back to right */
+.modal-body .container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+/* Bring back the text to center */
+.modal-body .container.right-panel-active .overlay-left {
+    transform: translateY(0);
+}
+
+/* Same effect for right */
+.modal-body .container.right-panel-active .overlay-right {
+    transform: translateY(20%);
+}
+
+/* phone */
+@media (max-width:576px){
+    .modal-body .overlay-container{
+        display: none;
+    }
+    .modal-body.container.sign-in-container{
+        transform: translateY(100%);
+    }
+    .modal-body.container.sign-up-container{
+        transform: translateY(100%);
+    }
+    .modal-body .container.right-panel-active .sign-in-container{
+        transform:translateY(0);
+    }
+    .modal-body .container.right-panel-active .sign-up-container{
+        transform:translateY(0);
+    }
+    .modal-body .sign-in-container,
+    .modal-body .sign-up-container{
+        left:0;
+        width: 100%;
+        z-index:2;
+        bottom: 20%;
+    }
+    .modal-body {
+        padding-top: 0;
+    }
+}
+

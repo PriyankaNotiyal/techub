@@ -1,0 +1,156 @@
+.banner-main {
+    background-image: url(images/course-bg.jpg);
+    background-position: center;
+    height: auto;
+    width: 100%;
+    height: auto;
+}
+.banner-main .row .col h2{
+    font-size: 45px !important;
+}
+
+
+
+.about-heading{
+    color:var(--bs-text-color);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;;
+    
+}
+.p-about{
+    width: 60%;
+}
+
+
+
+/* box */
+.box{
+    height: auto;
+    width: 20vw;
+    background-color:#fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+.box button{
+    border-radius: 12px;
+    
+    height: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+    color: var(--bs-background1-color);
+
+    border-width: 2px solid;
+    border-color: var(--bs-background1-color);
+
+}
+.content-course-row{
+    margin-left: 15%;
+}
+.box button:hover{
+    background-color: var(--bs-background1-color);
+    color: #fff;
+}
+.short-text{
+    width: 90%;
+    font-size: 15px;
+    text-align: start;
+}
+
+
+@media (max-width:576px){
+
+    .h5-heading-text{
+        margin-left: 90px;
+
+    }
+    /* .content-course-row{
+        
+        margin-left: 30%;
+        
+    } */
+    .box{
+        height: auto;
+        width: 83%;
+        background-color:#fff;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+    
+    }
+    .box button{
+        border-radius: 12px;
+        
+        height: 30px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: 0.4s ease-in-out;
+        color: var(--bs-background1-color);
+    
+        border-width: 2px solid;
+        border-color: var(--bs-background1-color);
+    
+    }
+    .p-about{
+        width: 100%;
+    }
+    .content-course-row{
+        margin-left: 0%;
+    }
+}
+@media (min-width:576px)and (max-width: 992px){
+    .h5-heading-text {
+            margin-left: 233px;
+    
+        }
+    
+        /* .content-course-row{
+            
+            margin-left: 30%;
+            
+        } */
+        .box {
+            height: auto;
+            width: 60%;
+            background-color: #fff;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 106px;
+    
+        }
+    
+        .box button {
+            border-radius: 12px;
+    
+            height: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: 0.4s ease-in-out;
+            color: var(--bs-background1-color);
+    
+            border-width: 2px solid;
+            border-color: var(--bs-background1-color);
+    
+        }
+    
+        .p-about {
+            width: 100%;
+            font-size: 24px;
+        }
+    
+        .content-course-row {
+            margin-left: 0%;
+        }
+}

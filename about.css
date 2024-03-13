@@ -1,0 +1,419 @@
+/* part1 */
+
+.part-1-container{
+    height: 69.5vh;
+    position: relative;
+}
+.circle1{
+    background-color:var(--bs-background1-color);
+    height: 50vh;
+    width: 23vw;
+    clip-path: circle(58.3% at 23% 25%);
+    
+    
+}
+
+.circle2{
+    background-color: var(--bs-background1-color);
+    height: 50vh;
+    width: 20vw;
+    clip-path: circle(36.1% at 94% 94%);
+    margin-bottom: 20%;
+    position: absolute;
+    right: 0;
+    top: 28% ;
+    
+}
+.circle3{
+    background-color: var(--bs-background1-color);
+    height: 50vh;
+    width: 20vw;
+    clip-path: circle(22.7% at 50% 51%);
+    position: absolute;
+    left: 10%;
+    top: 20% ;
+    
+}
+.part1-text{
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 15%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--bs-text-color);
+
+}
+
+/* about */
+.about-cointainer{
+    
+height: 100vh;
+width: 100%;
+
+}
+.about-heading{
+    color:var(--bs-text-color);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;;
+    
+}
+
+.row-about{
+    display: flex;
+    text-align: center; 
+}
+.p-about{
+    color: rgb(15, 15, 15);
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 25px;
+
+}
+/* story */
+.our-story-text{
+    padding-top: 50px;
+
+}
+.HOW-IT-ALL-BEGAN-text{
+    padding-top: 90px;
+    }
+    
+    .width-text{
+    width: 85%;
+    font-size: 1.2rem;
+    line-height: 25px;
+    align-self: center;
+    }
+    /* .images-text-width{
+        width: 50%;
+    } */
+    /* .HOW_IT_ALL_BEGAN-row{
+        letter-spacing: 0.3px;
+    } */
+    .main-headings{
+        color:var(--bs-text-color);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    }
+
+    .collection-images{
+        width: 80%;
+        margin-left: 8%;
+    }
+
+    /* our staff */
+   
+/* learning */
+/* learning */
+.learning-col{
+    background-color: var(--bs-background1-color);
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-left: 25%;
+}
+.learning-col .btn{
+    margin-left: 43%;
+    width: 100px;
+    background-color: white;
+    font-weight: 600;
+    border: 0;
+    transition: 0.4s ease-in-out;
+}
+.learning-col .btn:hover{
+    background-color: white !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+    @media (max-width: 576px) {
+        /* part1 */
+        .part-1-container{
+            height: 42vh;
+            position: relative;
+        }
+        .circle1{
+            background-color:var(--bs-background1-color);
+            height: 14vh;
+            width: 26vw;
+            clip-path: circle(58.3% at 23% 25%);
+            
+            
+        }
+        
+        .circle2{
+            background-color: var(--bs-background1-color);
+            height: 30vh;
+            width: 30vw;
+            clip-path: circle(36.1% at 94% 94%);
+            margin-bottom: 20%;
+            position: absolute;
+            right: 0;
+            top: 28.2% ;
+            
+        }
+        .circle3{
+            background-color: var(--bs-background1-color);
+            height: 16vh;
+            width: 24vw;
+            clip-path: circle(22.7% at 50% 51%);
+            position: absolute;
+            left: 2px;
+            top: 20% ;
+            
+        }
+        .part1-text{
+            width: 90%;
+            margin-top: 10%;
+            margin-left: 5%;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: var(--bs-text-color);
+        
+        }
+        
+/* about */
+.about-cointainer{
+    
+    height: 100vh;
+    width: 100%;
+    
+    }
+    .about-heading{
+        color:var(--bs-text-color);
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        font-weight: 600;;
+        
+    }
+    
+    .row-about{
+        display: flex;
+        text-align: center; 
+    }
+    .p-about{
+        color: rgb(15, 15, 15);
+        width: 94%;
+        font-size: 16px;
+        line-height: 25px;
+    
+    }
+    .our-story-text{
+        padding-top: 50px;
+    
+    }
+        .our-story-width {
+            width: 100%;
+            font-size: 16px; 
+        }
+        .our-story-img-col{
+            margin-right: 80px;
+        }
+        .HOW-IT-ALL-BEGAN-text{
+            padding-top: 10px;
+            }
+        .HOW_IT_ALL_BEGAN-row{
+            display: flex;
+            margin-top:2px;
+            
+            }
+        .collection-images{
+            width: 100%;
+            height: 300px;
+            margin-right: 80%;
+            margin-left: 0;
+    
+        }
+        .MYOP-DIFFERENT-text{
+            padding-top: 10px;
+            padding-left: 25px;
+        }
+        .width-text{
+            width: 100%;
+            font-size: 16px;
+            text-align: left;
+            }
+            .MYOP-DIFFERENT-row{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .images-text-width{
+                width: 100%;
+                font-size: 16px;
+            }
+            /* learing */
+            .learning-col{
+                background-color: var(--bs-background1-color);
+                width: 90%;
+                height: auto;
+                border-radius: 20px;
+                padding-top: 3px;
+                padding-bottom: 5px;
+                margin-left: 6%;
+            }
+            .learning-col .btn{
+                margin-left: 35%;
+                width: 100px;
+                background-color: white;
+                font-weight: 600;
+                border: 0;
+                transition: 0.4s ease-in-out;
+            }
+
+    }
+    @media ( min-width:576px)and (max-width: 992px){
+
+        /* top */
+         /* part1 */
+        .part-1-container{
+            height: 30vh;
+            position: relative;
+        }
+        .circle1{
+            background-color:var(--bs-background1-color);
+            height: 17vh;
+            width: 17vw;
+            clip-path: circle(58.3% at 23% 25%);
+            
+            
+        }
+        
+        .circle2{
+            background-color: var(--bs-background1-color);
+            height: 30vh;
+            width: 30vw;
+            clip-path: circle(36.1% at 94% 94%);
+            margin-bottom: 20%;
+            position: absolute;
+            right: 0;
+            top: 0%;
+            
+        }
+        .circle3{
+            background-color: var(--bs-background1-color);
+            height: 24vh;
+            width: 24vw;
+            clip-path: circle(22.7% at 50% 51%);
+            position: absolute;
+            left: 2px;
+            top: 20% ;
+            
+        }
+        .part1-text{
+            width: 60%;
+            margin-top: 10%;
+            margin-left: 5%;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: var(--bs-text-color);
+        
+        }
+        /* about */
+.about-cointainer{
+    
+    height: 100vh;
+    width: 100%;
+    
+    }
+    .about-heading{
+        color:var(--bs-text-color);
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        font-weight: 600;;
+        
+    }
+    
+    .row-about{
+        display: flex;
+        text-align: center; 
+    }
+    .p-about{
+        color: rgb(15, 15, 15);
+        width: 80%;
+        font-size: 24px;
+        line-height: 30px;
+    
+    }
+
+
+        .our-story-width {
+            width: 95%;
+            font-size: 24px;
+        }
+        .HOW_IT_ALL_BEGAN-row{
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            }
+            .MYOP-DIFFERENT-text{
+                padding-top: 17px;
+                padding-left: 20px;
+            }
+            .width-text{
+                width: 80%;
+                font-size: 24px;
+                line-height: 30px;
+                } 
+        .collection-images{
+    object-fit: cover;
+            width: 71%;
+            height: 398px;
+            margin-left: 8%;
+    
+    }
+    .HOW-IT-ALL-BEGAN-text{
+        padding-top: 30px;
+        
+        }
+        .MYOP-DIFFERENT-row{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-left: 55px;
+        }
+        .images-text-width{
+            width: 100%;
+            font-size: 24px;
+        }
+        .image-managment-card{
+            width: 60%;
+            height: 40vh;
+            margin-left: 157px;
+            
+        }
+        .image-managment{
+        height: 100%;
+        object-fit: cover;
+        text-align: center;
+            
+        }
+        .card-img-overlay{
+            margin-top: 80%;
+            color: rgb(8, 2, 2);
+        }
+        /* learning */
+    .learning-col{
+        background-color: var(--bs-background1-color);
+        width: 91%;
+        height: auto;
+        border-radius: 20px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        margin-left: 6%;
+    }
+    .learning-col .btn{
+        margin-left: 40%;
+        width: 100px;
+        background-color: white;
+        font-weight: 600;
+        border: 0;
+        transition: 0.4s ease-in-out;
+    }
+        
+    }
