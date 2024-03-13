@@ -24,7 +24,7 @@
 //     }
 // });
 
-alert("all ok");
+
 
 // carousel
 $('.owl-carousel').owlCarousel({
@@ -46,3 +46,16 @@ $('.owl-carousel').owlCarousel({
 // sign
 
 // search
+
+function displaySearch(){
+    let pathname = window.location.pathname;
+    let path = pathname.substring(1);
+    localStorage.setItem("path",path)
+    window.location.href = "/searchp.html"
+    
+}
+function closeSearch(){
+    let path = localStorage.getItem("path")
+    // alert("clicked:"+path)
+    window.location.href=  path; 
+}
