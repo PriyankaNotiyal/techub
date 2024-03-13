@@ -50,17 +50,17 @@ $('.owl-carousel').owlCarousel({
 function displaySearch(){
     console.log("displaysearch");
     let pathname = window.location.pathname;
-    console.log(pathname);
+    alert(pathname);
     let path = pathname.substring(1);
-    console.log(path);
+    alert(path);
     localStorage.setItem("path",path)
     window.location.href = "/searchp.html"
     
 }
 function closeSearch(){
     let path = localStorage.getItem("path")
-     console.log(pathname);
-     console.log(path);
+     alert(pathname);
+     alert(path);
     // alert("clicked:"+path)
     window.location.href=  path; 
 }
