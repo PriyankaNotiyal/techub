@@ -51,7 +51,7 @@ function displaySearch(){
     console.log("displaysearch");
     let pathname = window.location.pathname;
     alert(pathname);
-    let path = pathname.substring(1);
+    let path = pathname.substring(8);
     alert(path);
     localStorage.setItem("path",path)
     window.location.href = "/searchp.html"
