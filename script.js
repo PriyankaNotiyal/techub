@@ -24,6 +24,8 @@
 //     }
 // });
 
+alert("all ok");
+
 // carousel
 $('.owl-carousel').owlCarousel({
     loop: true,
